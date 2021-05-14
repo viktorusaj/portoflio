@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Animation On Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="style/top.css" type="text/css" rel="stylesheet">
+    <link href="style/effects.css" type="text/css" rel="stylesheet">
+    <link href="style/skills.css" type="text/css" rel="stylesheet">
+    <link href="style/about.css" type="text/css" rel="stylesheet">
+    <link href="style/footer.css" type="text/css" rel="stylesheet">
+    <link href="style/projects.css" type="text/css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- You can put any emoji here to use as favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍💻</text></svg>">
+    
+
+    <!-- Put here your site title -->
+    <title>Viktor Ušaj Živec</title>
+
+</head>
+
+<!-- Follow the HTML instructions to create your portfolio website -->
+<body>
+    
+    <div id="top">
+
+
+        <div class="header">
+            <h1> 
+                Živjo, moje ime je <span class="gradient">Viktor Ušaj Živec</span>
+            </h1>
+
+           
+
+            <p class="nav">
+                <a class="btn" href="#about">
+                    O meni
+                </a>
+                
+                
+
+                <a class="btn" href="#projects">
+                    Projekti
+                </a>
+            </p>
+        </div>
+
+        <a class="icon bounce gradient fade" id="down" href="#about" data-scroll>
+            <i class="fa fa-chevron-down"></i>
+        </a>
+
+    </div>
+
+    <!-- About section -->
+    <span id="about">&nbsp</span>
+    <section class="section-style" data-aos="fade-up">
+        <div class="container">
+            
+            <h2 class="section-title">O meni</h2>
+            
+            <div class="description">
+                <p>Moje ime je Viktor Ušaj Živec, star sem 18 let in obiskujem 4. letnik računalniške šole. Naslednjo leto bom šel na Ekonumsko fakulteto v Ljubljano. V prostem času se rad ukvarjam z fitnesom, gledanjem serij ter igranjem računalničkih igric.</p>
+            </div>
+            
+        </div>
+
+    </section>
+    <!-- End of about section -->
+
+   
+
+   <!-- Projects section -->
+   <section  id="projects">
+      <div class="container">
+
+         <h2 class="section-title">Projekti</h2>
+
+         <div class="projects-main">
+				
+				<!-- Project Card Start -->
+				<div class="project">
+					<div class="project-informations" data-aos="fade-right">
+						<h3>Bricks</h3>
+						<p>Igra Bricks s temo Doge to the moon</p>
+						<!--<button class="project-button gradient-btn fade" onclick="alert('Will be updated soon.');">See more</button>-->
+						<div class="wrapper">
+							 
+						</div>
+					</div>
+					<div class="project-img" data-aos="fade-left">
+						
+						<a href="https://viktorusaj.github.io/" target="blank"><img src="assets/bricks.jpg"></a>
+					</div>
+				</div>
+				<!-- Project Card End -->
+
+				<!-- Project Card Start -->
+            <div class="project">
+					<div class="project-informations" data-aos="fade-down">
+           			<h3>Labirint</h3>
+                  <p>Tema labirinta je Naruto</p>
+
+				
+               </div>
+               <div class="project-img" data-aos="fade-up">
+                 <a href="https://viktorusaj.github.io/labirint/" target="blank"><img src="assets/labirint.jpg"></a>
+               </div>
+                    
+				</div>
+				<!-- Project Card End -->
+				
+					<!-- Project Card Start -->
+            <div class="project">
+					<div class="project-informations" data-aos="fade-down">
+           			<h3>Nike</h3>
+                  <p>Spletna stran nike</p>
+
+				
+               </div>
+               <div class="project-img" data-aos="fade-up">
+                  <img class="shadow" src="assets/nike.jpg" alt="code">
+               </div>
+                    
+				</div>
+				<!-- Project Card End -->
+				
+						<!-- Project Card Start -->
+            <div class="project">
+					<div class="project-informations" data-aos="fade-down">
+           			<h3>UPN</h3>
+                  <p>Položnica</p>
+
+				
+               </div>
+               <div class="project-img" data-aos="fade-up">
+                  <img class="shadow" src="assets/upn.jpg" alt="code">
+               </div>
+                    
+				</div>
+				<!-- Project Card End -->
+
+         </div>
+
+      </div>
+
+   </section>
+    <!-- End of projects section -->
+
+    <a title="Go to top"
+        class="icon gradient fade"
+        style="visibility: hidden;"
+        id="top-button"
+        onclick="topFunction()"
+    >
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <footer class="footer container">
+
+        <hr>
+
+        <b><p>© 2021</p>
+        <p>
+            Build with  <span class="love">❤</span>
+             by 
+            <a class="fade" href="https://github.com/viktorusaj">Viktor Ušaj Živec</a>
+            </p></b>
+
+    </footer>
+
+    <!-- Animation On Scroll Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        var topButton = document.getElementById("top-button");
+
+        document.addEventListener("scroll", scrollFunction);
+
+        function scrollFunction(){
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                topButton.style.visibility = "visible";
+            }else{
+                topButton.style.visibility = "hidden";
+            }
+        }
+
+        function topFunction(){
+            document.documentElement.scrollTop = 0;
+        }
+
+    // Animation On Scroll Library
+       AOS.init({
+			 offset: 250,
+			 duration: 1000,
+             once: true
+		 });
+
+    </script>
+    
+</body>
+
+</html>
